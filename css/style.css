@@ -1,0 +1,176 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.contact-card {
+    background-color: #99A092;
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    gap: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #c0bfae;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.personal,
+.company {
+    text-align: center;
+}
+
+.divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.title {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.phone {
+    font-size: 0.95rem;
+}
+
+.org {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.location {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Tablet Layout */
+@media (min-width: 500px) and (max-width: 767px) {
+    .card-container {
+        align-items: center;
+    }
+
+    .contact-card {
+        max-width: 600px;
+    }
+
+    .profile-pic {
+        width: 40%;
+    }
+
+    .text-block {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .personal,
+    .company {
+        width: 48%;
+        text-align: left;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .title,
+    .phone {
+        font-size: 0.85rem;
+    }
+
+    .org {
+        font-size: 0.9rem;
+    }
+
+    .location {
+        font-size: 0.8rem;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .card-container {
+        align-items: center;
+    }
+
+    .contact-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 750px;
+        text-align: left;
+        padding: 2.5rem;
+        gap: 3rem;
+    }
+
+    .profile-pic {
+        width: 220px;
+        margin-left: 1.5rem;
+    }
+
+    .text-block {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        flex: 1;
+    }
+
+    .personal,
+    .company {
+        width: 45%;
+        text-align: left;
+    }
+
+    .divider {
+        display: none;
+    }
+}
